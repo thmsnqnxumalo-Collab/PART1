@@ -16,6 +16,7 @@ public class Login {
     private String registeredCellPhoneNumber;
     private String firstName;
     private String lastName;
+    public String UnregisreredUser;
 
     // Tracks the outcome of the last loginUser() call
     private boolean loginSuccessful = false;
@@ -37,6 +38,7 @@ public class Login {
             return false;
         }
         return username.contains("_") && username.length() <= 5;
+       
     }
 
     /**
